@@ -59,16 +59,16 @@ const BringUp = () => {
   const handleEatButtonClick = async () => {
     setIsEating(true);
     setIsModalOpen(true);
-    if (full + 10 <= 100) setFull(full + 10);
+    if (full + 25 <= 100) setFull(full + 25);
     setTimeout(() => {
       setIsEating(false);
-      if (full + 10 <= 100) pokeFull(mypokeid, full + 10);
+      if (full + 25 <= 100) pokeFull(mypokeid, full + 25);
     }, 3000);
     console.log("🚀 ~ file: BringUp.jsx:68 ~ setTimeout ~ full:", full);
-    if (full + 10 <= 100) {
+    if (full + 25 <= 100) {
       setModalContent({
         title: "밥먹기",
-        message: "포만도 +10",
+        message: "포만도 + 25",
         isError: false,
         imageSrc: "../../../public/image/eating.gif",
       });
@@ -86,16 +86,16 @@ const BringUp = () => {
   const handleWalkButtonClick = async () => {
     setIsWalking(true);
     setIsModalOpen(true);
-    if (intimate + 10 <= 100) setIntimate(intimate + 10);
+    if (intimate + 25 <= 100) setIntimate(intimate + 25);
     setTimeout(() => {
       setIsWalking(false);
-      if (intimate + 10 <= 100) pokeIntimate(mypokeid, intimate + 10);
+      if (intimate + 25 <= 100) pokeIntimate(mypokeid, intimate + 25);
     }, 3000);
     console.log("🚀 ~ file: BringUp.jsx:87 ~ setTimeout ~ intimate:", intimate);
-    if (intimate + 10 <= 100) {
+    if (intimate + 25 <= 100) {
       setModalContent({
         title: "산책하기",
-        message: "친밀도 +10",
+        message: "친밀도 + 25",
         isError: false,
         imageSrc: "../../../public/image/walking.gif",
       });
@@ -113,18 +113,18 @@ const BringUp = () => {
   const handleBathButtonClick = async () => {
     setIsModalOpen(true);
     setIsBathing(true);
-    if (clean + 10 <= 100) {
-      setClean(clean + 10);
+    if (clean + 25 <= 100) {
+      setClean(clean + 25);
     }
     setTimeout(() => {
       setIsBathing(false);
-      if (clean + 10 <= 100) pokeClean(mypokeid, clean + 10);
+      if (clean + 25 <= 100) pokeClean(mypokeid, clean + 25);
     }, 3000);
     console.log("🚀 ~ file: BringUp.jsx:109 ~ setTimeout ~ clean:", clean);
-    if (clean + 10 <= 100) {
+    if (clean + 25 <= 100) {
       setModalContent({
         title: "목욕하기",
-        message: "청결도 +10",
+        message: "청결도 + 25",
         isError: false,
         imageSrc: "../../../public/image/bathing1.gif",
       });
@@ -179,7 +179,7 @@ const BringUp = () => {
         backgroundImage: `url('../../../public/image/back1.jpg')`,
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
-        height: "80vh",
+        height: "70vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
